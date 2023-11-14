@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+header, nav, section, article, aside, footer {
+    color: white;
+    padding: 1rem;
+}
+
+header {
+    background-color: #e01227;
+}
+
+nav {
+    background-color: #f38f2d;
+}
+
+section {
+    background-color: #fec100;
+}
+
+article {
+    background-color: #7ac141;
+}
+
+aside {
+    background-color: #016fb4;
+}
+
+footer {
+    background-color: #942b8e;
+}
+
+.mb1 {
+    margin-block: 1rem;
+}
+
+/* Määritelään section ja aside flexin avulla */
+
+.parent {  /* vanhemman säännöt */
+    display: flex; /* otetaan flex käyttöön lapsissa */
+    flex-direction: row; /* flexataan lapset rivin suuntaisesti */
+    flex-wrap: nowrap; /* rivi ei voi vaihtua lapsille */
+
+}  
+
+.parent > * {  /* lapsen säännöt */
+    flex-grow: 1; /* jos lapsilla tässä sama arvo, lasten leveys sama, eli lapset yhtä levetä  */
+    flex-basis: 0; /* lapsien minimileveys */
+} 
