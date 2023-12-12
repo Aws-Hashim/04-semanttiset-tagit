@@ -39,7 +39,20 @@ footer {
 .mb1 {
     margin-block: 1rem;
 }
-
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.parent > * {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      
+    
+  }
 /* Määritelään section ja aside flexin avulla */
 
 .parent {  /* vanhemman säännöt */
@@ -53,3 +66,4 @@ footer {
     flex-grow: 1; /* jos lapsilla tässä sama arvo, lasten leveys sama, eli lapset yhtä levetä  */
     flex-basis: 0; /* lapsien minimileveys */
 } 
+}
